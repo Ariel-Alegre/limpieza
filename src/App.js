@@ -1,18 +1,36 @@
+import {useEffect} from 'react'
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import { useEffect } from 'react';
+import CalendarReserved from './components/Calendar/CalendarReserved';
+import PanelReserved from './components/Panel/PanelReserved';
+import NumberCard from './components/Panel/Card';
+import Test from './components/test';
+import Reserved from './components/Reserved/Reserved';
 
 function App() {
   useEffect(() => {
-    // Redirigir a la ruta deseada
-    window.location.href = '/Sofa & Carpet Cleaning.html';
+    window.location.reload();
+    
   }, []);
+
 
   return (
     <Router>
       <Routes>
-        {/* Ruta de inicio */}
-        <Route path='/' element={<Navigate to='/Sofa & Carpet Cleaning.html' />} />
+        <Route path='/' element={<Navigate to="/Sofa & Carpet Cleaning.html" />} />
+
+        <Route path="/book" element={<PanelReserved />}>
+          <Route index element={<Reserved />} />
+        
+
+
+        </Route>
+
+
+        <Route path='/test' element={<Test />} />
+
+
       </Routes>
+
     </Router>
   );
 }

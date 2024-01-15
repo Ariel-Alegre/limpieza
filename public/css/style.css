@@ -1896,3 +1896,19 @@ form label {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.Logo {
+  width: 5em;
+  
+}
+
+@media (max-width: 768px) {
+  .Logo {
+    width: 3em;
+    
+  }
+.title-home {
+  display: none;
+}
+  
+}

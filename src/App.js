@@ -18,15 +18,15 @@ function App() {
       <Routes>
         <Route path='/' element={<Navigate to="/Sofa & Carpet Cleaning.html" />} />
 
-        <Route path="/book" element={<PanelReserved />}>
+ {/*        <Route path="/book" element={<PanelReserved />}>
           <Route index element={<Reserved />} />
         
 
 
-        </Route>
+        </Route> */}
 
 
-        <Route path='/test' element={<Test />} />
+      {/*   <Route path='/test' element={<Test />} /> */}
 
 
       </Routes>
